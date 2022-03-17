@@ -15,10 +15,40 @@ directory you are in at the moment::
 
   $ pwd
 
-cd stands for change directory. And a directory in Unix is like a folder in
-windows.
+cd stands for change directory. And a directory in Unix (is a Unix path) is like
+a folder in windows.
 
   $ cd
+
+to move to a parent directory we use as such::
+
+  $ cd ..
+
+another example would be, if we have a directory named
+`learning-computer-programming` in our current directory then we can navigate to
+the `learning-computer-programming` by calling::
+
+  $ cd new_directory
+
+the following command shows a list view of all the contents inside the
+directory. Example usages::
+
+  $ find
+
+to make a new directory named `python` in our current directory, we can use the
+following::
+
+  $ mkdir python
+
+here `mkdir` stands for make(mk) directory(dir). To remove an EMPTY directory
+named `python` we can use the following::
+
+  $ rmdir python
+
+here `rmdir` stands for remove(rm) directory(dir). To remove a NON-EMPTY
+directory named `python` we can use the following::
+
+  $ rm -r python
 
 In the init.sh file the first line has this notation `#!/bin/bash`. Here `#!` is
 call shebang, which basically points to the program that should run the file.
@@ -33,3 +63,12 @@ The command `rm` stands for remove. Used to remove something from a Unix
 directory.
 
   $ rm
+
+a plain `rm` commands works with a file without complaining. To use `rm` to
+remove a directory see the example command above.
+
+To create an empty file we can use the following command::
+
+  $ touch filename.py
+
+this will create an empty file name `filename.py` inside our current directory.
