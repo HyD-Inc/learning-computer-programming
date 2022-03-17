@@ -1,4 +1,3 @@
-"""
 A talk about operating systems
 ==============================
 
@@ -16,9 +15,9 @@ Installing the atom editor
 ==========================
 
 We downloaded the atom package named `atom-amd64.deb` from
-`https://atom.io/download/deb?channel=nightly` and it was stored in our
-`~/Downloads` (here `~` points to our unix `$HOME`) directory and the path to
-the file was `~/Downloads/atom-amd64.deb`. We had to navigate to our
+`https://atom.io/download/deb?channel=nightly` using browser and it was stored
+in our `~/Downloads` (here `~` points to our unix `$HOME`) directory and the
+path to the file was `~/Downloads/atom-amd64.deb`. We had to navigate to our
 `~/Downloads` directory using the following command::
 
     $ cd
@@ -51,5 +50,3 @@ to building/compiling kotlin programs. As said above, there maybe other
 compilers from different vardors.
 
 A compiler usually turns the compiled program into binary packages.
-
-"""
