@@ -49,4 +49,15 @@ The example languages are kotlin, Java. Android studio has full functionalities 
 to building/compiling kotlin programs. As said above, there maybe other
 compilers from different vardors.
 
-A compiler usually turns the compiled program into binary packages.
+A compiler usually turns the compiled program into binary packages or machine language.
+
+Interpreted language
+--------------------
+
+Interpreted language require an interpreter to run a program written in that
+language. An interpreter is an application that is usually a compiled program.
+
+For example python is interpreted language. Python interpreter is a compiled `C`
+program. Computer language `C` is known to be the oldest programming language
+and almost all of the digital machine in the world is in some way running some
+programs written in `C`.
