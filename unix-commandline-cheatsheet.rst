@@ -28,7 +28,7 @@ another example would be, if we have a directory named
 `learning-computer-programming` in our current directory then we can navigate to
 the `learning-computer-programming` by calling::
 
-  $ cd new_directory
+  $ cd learning-computer-programming
 
 the following command shows a list view of all the contents inside the
 directory. Example usages::
@@ -63,6 +63,11 @@ The command `rm` stands for remove. Used to remove something from a Unix
 directory.
 
   $ rm
+
+if you have a file named `intro.py` in you directory and you want to remove this
+file. You can use the example command below::
+
+  $ rm intro.py
 
 a plain `rm` commands works with a file without complaining. To use `rm` to
 remove a directory see the example command above.
