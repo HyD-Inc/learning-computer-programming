@@ -157,21 +157,94 @@ Looking up the types of objects
 >>> type("some random string")
 <class 'str'>
 
-
+Manipulating strings (of class str)
+-----------------------------------
 
 >>> first_name = "Sharif"
 >>> last_name = "Mehedi"
+
+We can use the `+` (plus) operator to concatenate strings.
+
 >>> full_name = first_name + " " + last_name
 >>> full_name
 'Sharif Mehedi'
 >>> first_name + last_name
 'SharifMehedi'
+
+There is a built-in *function* `dir` that shows the attributes, properties and
+methods of a class.
+
 >>> dir
 <built-in function dir>
 >>> dir()
 ['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'first_name', 'full_name', 'last_name', 'potato_price_per_kg', 'quantity_potato_in_kg', 'total_price']
 >>> dir(first_name)
-['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__',
+'__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__',
+'__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__',
+'__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__',
+'__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__',
+'__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize',
+'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find',
+'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal',
+'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace',
+'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans',
+'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit',
+'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title',
+'translate', 'upper', 'zfill']
+
+What is a class?
+
+class
+-----
+
+A class is something that extends the python types.
+
+A class definition looks like the following::
+
+    color = "green"
+
+    class Food(object):
+
+        color = None
+        calories = 0.0
+        color_1 = "blue"
+
+    name = "Stupid name"
+    color = "red"
+
+In the above example we have defined a class name `Food` that extends the python
+type `object` and let's NOT dwell into meaning of what this python type `object`
+means for now and let's just take the meaning as the name `object` suggest that
+it is simply some generic object.
+
+A class definition must start with the keyword `class`.
+
+If we look at the above example, the line 205 is the line where the definition
+of `Food` starts. A definition must start with some keyword, which in this case
+is `class` and must end with a colon (:). And to have attributes defined for
+this `class`/`Food` we must follow the `rule of indentation`.
+
+The rule of indentation
+-----------------------
+
+Everything that belongs to a defined object must have a certain number of
+whitespaces before them. We programmer shortly user the `Tab` key in the
+keyboard. You can set your choice of indentation on your text editor. I
+personally like to have 4 whitespaces is indentation, so I myself set the value
+for the `Tab` key to give 4 whitespaces. But you can choose 2 or 1 or 6
+basically, maybe the number you like most.
+
+
+What does attributes, properties and methods mean?
+
+attribute:
+
+  An attribute is a variable defined within the local scope of a class. To say
+  in simpler term, let's say an attribute is a variable defined within a class.
+
+
+
 >>> first_name
 'Sharif'
 >>> first_name.lower()
