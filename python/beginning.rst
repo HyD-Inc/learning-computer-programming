@@ -202,13 +202,30 @@ A class is something that extends the python types.
 
 A class definition looks like the following::
 
+    # this definition is called a variable assignment
     color = "green"
 
-    class Food(object):
+    # this is called a class
+    class Tree(object):
 
-        color = None
-        calories = 0.0
-        color_1 = "blue"
+        species = None
+
+    # this definition is called a function
+    def get_food():
+
+        class Food(object):
+
+            # this definition called an attribute assignment
+            color = None
+
+            calories = 0.0
+            color_1 = "blue"
+
+            # this definition is called a method
+            def __init__(self, type):
+                self.type = type
+
+        return Food(type="vegetables")
 
     name = "Stupid name"
     color = "red"
@@ -224,6 +241,20 @@ If we look at the above example, the line 205 is the line where the definition
 of `Food` starts. A definition must start with some keyword, which in this case
 is `class` and must end with a colon (:). And to have attributes defined for
 this `class`/`Food` we must follow the `rule of indentation`.
+
+Local scope:
+
+Everything stated after some definition following the rule of indentation is
+within local scope of the definition. Meaning the stated objects are only
+accessible to the definition. And everything that are within the global scope of
+the definition can NOT access the stated objects (within the local scope of the
+definition).
+
+Global scope:
+
+Everything stated with less or equal indentation then some definition is within
+the global scope, meaning the stated objects are accessible to the defined
+object.
 
 The rule of indentation
 -----------------------
