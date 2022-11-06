@@ -117,3 +117,26 @@ Dict manipulation
         >>> my_dict.update(an_dict)
         >>> my_dict
         {'key3': True, 'key4': 'Bluh'}
+
+Set manipulation
+----------------
+
+    Taking an instance of a Set:
+
+        >>> myset = {'foo', 3, 5, 'bar'}
+        ... # or set(('foo', 3, 5, 'bar'))
+
+    Adding an item to a set:
+
+        >>> myset.add('dummy')
+        >>> myset
+        {3, 5, 'bar', 'dummy', 'foo'}
+
+    Removing an item from a set:
+
+        >>> myset.remove('bar')
+        >>> myset
+        {3, 5, 'dummy', 'foo'}
+
+PS> A tuple object is immutable, so we can not manipulate a tuple after taking
+an instance of it.
